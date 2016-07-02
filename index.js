@@ -31,7 +31,7 @@ const Game = React.createClass({
     return combs.map(c => /(XXX|OOO)/.test(c.map(i => g[i]).join(''))).indexOf(true) > -1
   },
   render() {
-    const { grid, currentPlayer: pl, gameOver } = this.state;
+    const { grid, currentPlayer: pl, gameOver } = this.state
     return (
       <div className="Game">
         {gameOver ? (
@@ -46,4 +46,4 @@ const Game = React.createClass({
   }
 })
 
-ReactDOM.render(<Game />, document.querySelector('#game'));
+ReactDOM.render(<Game />, document.querySelector('#game'))
